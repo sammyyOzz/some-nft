@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const LettersContainer = styled.div`
   height: 380px;
-  border: 1px solid red;
-  margin-top: 100px;
+  /* border: 1px solid red; */
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   overflow: hidden;

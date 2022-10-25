@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import routes from '../../routes'
 import NavButton from './nav-button.component'
@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import useWindowSize from 'react-use/lib/useWindowSize'
+
 
 const Root = styled.div`
   aside {
@@ -67,6 +69,13 @@ const sideVariants = {
 };
 
 function Sidebar({ closeSidebar }) {
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    if (width > 900) {
+      closeSidebar()
+    }
+  }, [width])
 
   return (
     <Root>

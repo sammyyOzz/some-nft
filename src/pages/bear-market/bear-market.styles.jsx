@@ -13,12 +13,11 @@ export const Cover = styled.div`
 `
 
 export const TitleContainer = styled.div`
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
   background-color: #fff9f0;
   text-transform: uppercase;
 
   @media(max-width: 600px) {
-    /* width: 60%; */
     padding: 35px 25px;
     margin: 20px;
   }
@@ -29,6 +28,11 @@ export const SmallTitle = styled.p`
   color: #402d28;
   letter-spacing: 2px;
   font-weight: 500;
+  margin-bottom: 30px;
+
+  @media (max-width: 600px) {
+    margin-bottom: 50px;
+  }
 `
 
 export const LargeTitle = styled.h2`

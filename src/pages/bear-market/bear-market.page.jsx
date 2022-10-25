@@ -7,10 +7,12 @@ import {
   SmallTitle,
   LargeTitle,
 } from './bear-market.styles'
+import Confetti from '../../components/confetti/confetti.component'
 
 function BearMarket() {
   return (
     <>
+      <Confetti />
       <Cover>
         <TitleContainer>
           <SmallTitle>The Bear Market</SmallTitle>

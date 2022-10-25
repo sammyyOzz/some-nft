@@ -6,7 +6,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 import Sidebar from './sidebar.component'
 import { AnimatePresence, useCycle } from 'framer-motion'
-import { useEffect, useState } from 'react'
 
 const Root = styled.div`
   display: flex;
@@ -43,22 +42,6 @@ const LinksContainer = styled.div`
 
 function Navbar() {
   const [isSidebarOpen, toggleSidebarIsOpen] = useCycle(false, true);
-  const [screenWidth, setScreenWidth] = useState(0)
-
-  useEffect(() => {
-    const handleResize = () => {
-      const viewportWidth = document.documentElement.clientWidth;
-      setScreenWidth(viewportWidth);
-    }
-
-    if (screenWidth > 900 && isSidebarOpen) {
-      toggleSidebarIsOpen()
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, [isSidebarOpen, screenWidth])
 
   return (
     <>

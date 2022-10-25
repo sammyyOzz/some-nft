@@ -12,6 +12,7 @@ const Root = styled.div`
     background-color: #008056;
     position: fixed;
     top: 0;
+    z-index: 100;
   }
 
   .links-container {

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../theme'
 
 export const Section = styled.section`
   /* width: 100vw;
@@ -27,13 +28,13 @@ export const LettersContainer = styled.div`
     transform: scale(0.8, 1.2);
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${breakpoints('desktop')}) {
     transform: scale(0.6, 1);
     overflow: visible;
     /* margin: 150px 0 0 -50px; */
   } 
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints('mobile')}) {
     transform: scale(1);
     /* overflow-x: hidden; */
     margin: 150px 0 0 -50px;

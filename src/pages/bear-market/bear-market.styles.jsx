@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints, color } from '../../theme';
 
 export const Cover = styled.div`
   height: 85vh;
@@ -14,10 +15,10 @@ export const Cover = styled.div`
 
 export const TitleContainer = styled.div`
   padding: 20px 50px 50px 50px;
-  background-color: #fff9f0;
+  background-color: ${color('background')};
   text-transform: uppercase;
 
-  @media(max-width: 600px) {
+  @media(max-width: ${breakpoints('mobile')}) {
     padding: 35px 25px;
     margin: 20px;
   }
@@ -25,12 +26,12 @@ export const TitleContainer = styled.div`
 
 export const SmallTitle = styled.p`
   font-size: 20px;
-  color: #402d28;
+  color: ${color('secondary')};
   letter-spacing: 2px;
   font-weight: 500;
   margin-bottom: 30px;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints('mobile')}) {
     margin-bottom: 50px;
   }
 `
@@ -39,10 +40,10 @@ export const LargeTitle = styled.h2`
   font-size: 60px;
   margin: 0;
   transform: scaleY(1.5);
-  color: #402d28;
+  color: ${color('secondary')};
   font-family: 'Luckiest Guy', cursive;
 
-  @media(max-width: 900px) {
+  @media(max-width: ${breakpoints('desktop')}) {
     font-size: 60px;
   }
 `
@@ -58,7 +59,7 @@ export const Content = styled.div`
   width: 80%;
   margin: 0 auto;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints('mobile')}) {
     width: calc(100% - 30px);
   }
 `

@@ -3,6 +3,7 @@ export const theme = {
     primary: '#916b46',
     secondary: '#402d28',
     background: '#f3eadb',
+    htmlBody: '#fff9f0'
   },
   breakpoints: {
     mobile: '600px',

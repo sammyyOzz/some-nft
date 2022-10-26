@@ -5,7 +5,7 @@ import routes from './routes'
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         {routes
           .filter(route => route.type === 'link')

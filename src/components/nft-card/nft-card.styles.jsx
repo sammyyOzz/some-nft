@@ -1,13 +1,9 @@
 import styled from 'styled-components'
+import { breakpoints, color } from '../../theme'
 
 export const Root = styled.div`
-  background-color: #f3eadb;
-  color: #bb9772;
-
-  /* &:hover img { 
-    transform: scale(1.2);
-    transition: 1000ms linear all;
-  } */
+  background-color: ${color('background')};
+  color: ${color('primary')};
 `
 
 export const ImageContainer = styled.div`
@@ -56,7 +52,7 @@ export const MediumTitle = styled.h3`
 `
 
 export const LargeTitle = styled.h2`
-  color: #402d28;
+  color: ${color('secondary')};
   font-size: 37px;
   margin: 0;
 `
@@ -66,7 +62,7 @@ export const Body = styled.div`
   justify-content: space-between;
   flex-direction: ${p => p.isSingle ? 'row' : 'column'};
 
-  @media (max-width: 720px) {
+  @media (max-width: ${breakpoints('tablet')}) {
     flex-direction: column;
     width: 100%;
   }
@@ -78,7 +74,7 @@ export const Description = styled.p`
   line-height: 23px;
   width: ${p => p.isSingle ? '50%' : '100%'};
 
-  @media (max-width: 720px) {
+  @media (max-width: ${breakpoints('tablet')}) {
     width: 100%;
   }
 `

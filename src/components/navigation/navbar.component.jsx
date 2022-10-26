@@ -6,6 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
 import Sidebar from './sidebar.component'
 import { AnimatePresence, useCycle } from 'framer-motion'
+import { breakpoints } from '../../theme'
 
 const Root = styled.div`
   display: flex;
@@ -28,7 +29,7 @@ const LinksContainer = styled.div`
     display: none;
   }
 
-  @media(max-width: 900px) {
+  @media(max-width: ${breakpoints('desktop')}) {
     button:not(#menu-bar) {
       display: none;
     }

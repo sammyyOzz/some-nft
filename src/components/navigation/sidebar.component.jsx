@@ -7,11 +7,12 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import useWindowSize from 'react-use/lib/useWindowSize'
+import { sidebar } from '../../theme'
 
 
 const Root = styled.div`
   aside {
-    background-color: #008056;
+    background-color: ${sidebar('background')};
     position: fixed;
     top: 0;
     z-index: 100;

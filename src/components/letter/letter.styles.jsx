@@ -31,14 +31,17 @@ export const Image = styled.img`
 `
 
 export const FillText = styled.span`
-  background-image: url(${background});
+  background-image: url(${p => p.imgSrc || background});
   background-size: cover;
+  background-position: center;
 	-webkit-text-fill-color: #000000bb;
 	-webkit-background-clip: text;
   background-clip: text;
 	color: #fff;
 	font-size: 420px;
 	font-family: 'Lobster', cursive;
+  margin-right: -50px;
+
   /* border: 1px solid green; */
 
   &:hover {

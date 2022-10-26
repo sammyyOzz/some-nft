@@ -8,10 +8,11 @@ import {
   LargeTitle,
 } from './bear-market.styles'
 import Confetti from '../../components/confetti/confetti.component'
+import Layout from '../../components/layout/layout.component';
 
 function BearMarket() {
   return (
-    <>
+    <Layout>
       <Confetti />
       <Cover>
         <TitleContainer>
@@ -34,9 +35,7 @@ function BearMarket() {
           </Grid>
         </Content>
       </section>
-
-      
-    </>
+    </Layout>
   )
 }
 

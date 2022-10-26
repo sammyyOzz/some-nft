@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { color } from '../../theme';
 
 const Button = styled.button`
-  background-color: #402d28;
-  color: #f3eadb;
+  background-color: ${color('secondary')};
+  color: ${color('background')};
   text-transform: uppercase;
   cursor: pointer;
   padding: 15px;

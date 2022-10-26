@@ -16,7 +16,7 @@ export const theme = {
     large: '37px'
   },
   sidebar: {
-    background: '#008056'
+    background: '#9b0808'
   }
 }
 

@@ -1,9 +1,9 @@
 export const theme = {
   color: {
-    primary: '#916b46',
-    secondary: '#402d28',
-    background: '#f3eadb',
-    htmlBody: '#fff9f0'
+    primary: '#cc3939',
+    secondary: '#75210a',
+    background: '#f5d7c6',
+    htmlBody: '#f3e5e2'
   },
   breakpoints: {
     mobile: '600px',

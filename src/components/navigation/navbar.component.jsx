@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import Sidebar from './sidebar.component'
 import { AnimatePresence, useCycle } from 'framer-motion'
 import { breakpoints } from '../../theme'
+import logoImage from '../../assets/logo.jpg'
 
 const Root = styled.div`
   display: flex;
@@ -18,6 +19,11 @@ const Root = styled.div`
 
 const Logo = styled.div`
   font-size: 30px;
+
+  & > img {
+    width: 50px;
+    height: 50px;
+  }
 
   & > h1 {
     margin: 0;
@@ -48,7 +54,8 @@ function Navbar() {
     <>
       <Root>
         <Logo>
-          <h1><em>Zoro</em></h1>
+          <img src={logoImage} alt="" />
+          {/* <h1><em>Zoro</em></h1> */}
         </Logo>
 
         <LinksContainer>

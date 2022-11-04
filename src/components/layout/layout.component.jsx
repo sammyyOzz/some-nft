@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 const Root = styled.div`
   overflow-x: hidden;
+  
 `
 
 const Layout = ({ children }) => (

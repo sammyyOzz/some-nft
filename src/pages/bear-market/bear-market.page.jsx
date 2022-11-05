@@ -1,4 +1,4 @@
-import NftCard from '../../components/nft-card/nft-card.component';
+import NftCard from '../../components/nft/nft-card.component';
 import { 
   Content, 
   Cover, 

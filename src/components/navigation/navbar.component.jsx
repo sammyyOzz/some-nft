@@ -61,10 +61,10 @@ function Navbar() {
         <LinksContainer>
           {routes
             .filter(route => route.type === 'link')
-            .map(({ displayName, path}) => (
-              <Link to={path} key={displayName}>
+            .map(({ displayName, link }) => (
+              <a href={link} key={displayName}>
                 <NavButton>{displayName}</NavButton>
-              </Link>
+              </a>
           ))}
           {routes
             .filter(route => route.type === 'icon')

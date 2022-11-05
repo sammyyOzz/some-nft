@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navigation/navbar.component';
+import Main from './pages/main/main.page';
 import routes from './routes'
 
 function App() {
+
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
-      <Routes>
+      <Main />
+      {/* <Routes>
         {routes
           .filter(route => route.type === 'link')
           .map(({ displayName, component, path }) => (
@@ -16,7 +17,7 @@ function App() {
             element={component} 
           />
         ))}
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   );
 }

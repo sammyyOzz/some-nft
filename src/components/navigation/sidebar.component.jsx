@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import useWindowSize from 'react-use/lib/useWindowSize'
 import { sidebar } from '../../theme'
+import logoImage from '../../assets/logo.jpg'
 
 
 const Root = styled.div`
@@ -37,6 +38,11 @@ const Header = styled.div`
 
 const Logo = styled.div`
   font-size: 30px;
+
+  & > img {
+    width: 50px;
+    height: 50px;
+  }
 
   & > h1 {
     margin: 0;
@@ -95,7 +101,8 @@ function Sidebar({ closeSidebar }) {
       >
         <Header>
           <Logo>
-            <h1><em>Zoro</em></h1>
+          <img src={logoImage} alt="" />
+            {/* <h1><em>Zoro</em></h1> */}
           </Logo>
 
           <NavButton onClick={closeSidebar}>
@@ -112,17 +119,17 @@ function Sidebar({ closeSidebar }) {
         >
           {routes
             .filter(route => route.type === 'link')
-            .map(({ displayName, path }) => (
+            .map(({ displayName, link }) => (
             <motion.div
               key={displayName}
               variants={itemVariants}
               className="links"
             >
-              <Link to={path}>
+              <a href={link}>
                 <NavButton onClick={closeSidebar}>
                   { displayName }
                 </NavButton>
-              </Link>
+              </a>
             </motion.div>
           ))}
         </motion.div>

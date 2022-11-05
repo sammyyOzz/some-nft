@@ -1,7 +1,7 @@
 export const theme = {
   color: {
-    primary: '#cc3939',
-    secondary: '#75210a',
+    primary: '#250330',
+    secondary: '#250d2d',
     background: '#f5d7c6',
     htmlBody: '#f3e5e2'
   },
@@ -16,7 +16,7 @@ export const theme = {
     large: '37px'
   },
   sidebar: {
-    background: '#9b0808'
+    background: '#f88fea96'
   }
 }
 

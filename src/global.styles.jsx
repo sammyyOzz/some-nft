@@ -4,6 +4,11 @@ import { color } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
+
+  html {
+    scroll-behavior: smooth;
+    scroll-margin: 100px;
+  }
   
   body {
     margin: 0;

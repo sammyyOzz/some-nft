@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { breakpoints, color } from '../../theme'
 
 export const Root = styled.div`
-  background-color: ${color('background')};
+  /* background-color: ${color('background')}; */
   color: ${color('primary')};
 `
 

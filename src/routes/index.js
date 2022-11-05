@@ -7,16 +7,35 @@ import Main from "../pages/main/main.page";
 const routes = [
   {
     displayName: 'Home',
-    path: '/',
-    component: <Main />,
+    link: '#home',
     type: 'link'
   },
   {
-    displayName: 'Bear Market',
-    path: '/bear-market',
-    component: <BearMarket />,
+    displayName: 'About Us',
+    link: '#about-us',
     type: 'link'
   },
+  {
+    displayName: 'Nfts',
+    link: '#nfts',
+    type: 'link'
+  },
+  {
+    displayName: 'Roadmap',
+    link: '#roadmap',
+    type: 'link'
+  },
+  {
+    displayName: 'Faqs',
+    link: '#faqs',
+    type: 'link'
+  },
+  // {
+  //   displayName: 'Bear Market',
+  //   path: '/bear-market',
+  //   component: <BearMarket />,
+  //   type: 'link'
+  // },
   {
     type: 'icon',
     link: '#',

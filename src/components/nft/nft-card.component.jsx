@@ -23,7 +23,7 @@ function NftCard({ isSingle, imgSrc }) {
     <Root>
       <Image src={imgSrc || "https://assets-global.website-files.com/622eead55797fc2865c24818/62fdfa240b641e664decf242_Lonzo_Ball_Bear-p-1600.webp"} alt="" />
 
-      <ContentContainer>
+      {/* <ContentContainer>
         <Top>
           <TopLeft>
             <SmallTitle>1 of 2 auctions</SmallTitle>
@@ -47,7 +47,7 @@ function NftCard({ isSingle, imgSrc }) {
           </ButtonContainer>
         </Body>
 
-      </ContentContainer>
+      </ContentContainer> */}
     </Root>
   )
 }

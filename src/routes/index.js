@@ -1,8 +1,4 @@
-import Home from "../pages/home/home.page";
-import BearMarket from "../pages/bear-market/bear-market.page";
-
 import { faInstagram, faTwitter, faDiscord } from "@fortawesome/free-brands-svg-icons"
-import Main from "../pages/main/main.page";
 
 const routes = [
   {

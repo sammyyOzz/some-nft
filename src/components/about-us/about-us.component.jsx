@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { breakpoints, color, fontSize } from '../../theme'
-import logoImage from '../../assets/logo.jpg'
+import logoImage from '../../assets/background.jpg'
 import AnimatedCard from '../animated/animated-card.component'
 
 const Root = styled.div`

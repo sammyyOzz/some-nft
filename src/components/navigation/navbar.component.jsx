@@ -11,7 +11,7 @@ import logoImage from '../../assets/logo.jpg'
 
 const Root = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
   padding: 7px 15px;
@@ -53,10 +53,10 @@ function Navbar() {
   return (
     <>
       <Root>
-        <Logo>
+        {/* <Logo>
           <img src={logoImage} alt="" />
-          {/* <h1><em>Zoro</em></h1> */}
-        </Logo>
+          <h1><em>Zoro</em></h1>
+        </Logo> */}
 
         <LinksContainer>
           {routes

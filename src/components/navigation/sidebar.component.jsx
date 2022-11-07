@@ -17,6 +17,8 @@ const Root = styled.div`
     position: fixed;
     top: 0;
     z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .links-container {
@@ -30,7 +32,7 @@ const Root = styled.div`
 
 const Header = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   box-sizing: border-box;
   padding: 7px 15px;
@@ -63,13 +65,13 @@ const itemVariants = {
 const sideVariants = {
   closed: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.05,
       staggerDirection: -1
     }
   },
   open: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.05,
       staggerDirection: 1
     }
   }
@@ -100,10 +102,10 @@ function Sidebar({ closeSidebar }) {
         }}
       >
         <Header>
-          <Logo>
-          <img src={logoImage} alt="" />
-            {/* <h1><em>Zoro</em></h1> */}
-          </Logo>
+          {/* <Logo>
+            <img src={logoImage} alt="" />
+            <h1><em>Zoro</em></h1>
+          </Logo> */}
 
           <NavButton onClick={closeSidebar}>
             <FontAwesomeIcon icon={faXmark} />
@@ -128,6 +130,21 @@ function Sidebar({ closeSidebar }) {
               <a href={link}>
                 <NavButton onClick={closeSidebar}>
                   { displayName }
+                </NavButton>
+              </a>
+            </motion.div>
+          ))}
+          {routes
+            .filter(route => route.type === 'icon')
+            .map(({ icon, link }, i) => (
+            <motion.div
+              key={i}
+              variants={itemVariants}
+              className="links"
+            >
+              <a href={link}>
+                <NavButton onClick={closeSidebar}>
+                  <FontAwesomeIcon icon={icon} />
                 </NavButton>
               </a>
             </motion.div>
